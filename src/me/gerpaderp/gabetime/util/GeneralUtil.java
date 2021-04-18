@@ -16,16 +16,6 @@ public class GeneralUtil {
 		return commandPrefix;
 	}
 	
-	public static String getSuccessMessage(OfflinePlayer user) {
-		ChatColor color;
-		if (user.isOnline()) {
-			color = ChatColor.GREEN;
-		} else {
-			color = ChatColor.RED;
-		}
-		return (getPrefix() + ChatColor.GRAY + "User " + color + user.getName() + ChatColor.GRAY + " has played for:\n • " + ChatColor.YELLOW + formatTicks(user.getStatistic(Statistic.PLAY_ONE_MINUTE)));
-	}
-	
 	public static String formatTicks(int ticksPlayed) {
 		int totalseconds = ticksPlayed / 20;
 
@@ -37,6 +27,16 @@ public class GeneralUtil {
 				- TimeUnit.MINUTES.toSeconds(minutes));
 
 		return days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+	}
+	
+	public static String getSuccessMessage(OfflinePlayer user) {
+		ChatColor color;
+		if (user.isOnline()) {
+			color = ChatColor.GREEN;
+		} else {
+			color = ChatColor.RED;
+		}
+		return (getPrefix() + ChatColor.GRAY + "User " + color + user.getName() + ChatColor.GRAY + " has played for:\n • " + ChatColor.YELLOW + formatTicks(user.getStatistic(Statistic.PLAY_ONE_MINUTE)));
 	}
 	
 }
