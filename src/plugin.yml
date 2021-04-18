@@ -1,0 +1,11 @@
+name: GabeTime
+main: me.gerpaderp.gabetime.GabeTimeMain
+version: 1.0
+authors: [Gerpaderp]
+depend: [Vault]
+api-version: 1.16
+commands:
+  playtime:
+    usage: /playtime [player]
+    description: Reveals the formatted playtime of an online or offline player.
+    aliases: [pt, gabetime, gt]
