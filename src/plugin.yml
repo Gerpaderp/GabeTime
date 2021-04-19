@@ -1,7 +1,7 @@
 name: PlayTime
 main: me.gerpaderp.playtime.PlayTimeMain
 version: 1.0
-authors: [Gerpaderp]
+author: Gerpaderp
 api-version: 1.16
 commands:
   playtime:
