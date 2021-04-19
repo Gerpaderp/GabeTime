@@ -1,11 +1,11 @@
-package me.gerpaderp.gabetime;
+package me.gerpaderp.playtime;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-import me.gerpaderp.gabetime.commands.PlayTime;
-import me.gerpaderp.gabetime.util.GeneralUtil;
+import me.gerpaderp.playtime.commands.PlayTime;
+import me.gerpaderp.playtime.util.GeneralUtil;
 
-public class GabeTimeMain extends JavaPlugin {
+public class PlayTimeMain extends JavaPlugin {
 
 	public void onEnable() {
 		System.out.println(GeneralUtil.getPrefix() + "has been enabled.");
