@@ -19,7 +19,7 @@ public class PlayTime implements CommandExecutor {
 
 		String prefix = GeneralUtil.getPrefix();
 
-		if (!(sender.hasPermission("gabetime.playtime"))) {
+		if (!(sender.hasPermission("playtime.playtime"))) {
 			sender.sendMessage(ChatColor.RED + "You lack permission to run this command.");
 			return true;
 		}
