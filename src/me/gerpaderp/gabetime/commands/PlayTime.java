@@ -31,11 +31,12 @@ public class PlayTime implements CommandExecutor {
 		OfflinePlayer target = args.length == 0 ? (OfflinePlayer) sender : Bukkit.getOfflinePlayer(args[0]);
 
 		if (target == null) {
-			//Player doesn't exist
 			sender.sendMessage(prefix + ChatColor.RED + "Could not find the player: " + args[0]);
-			//return true;
+			return true;
 		}
+		
 		//Player exists
+		
 		if (!(target.hasPlayedBefore())) {
 			sender.sendMessage(prefix + ChatColor.RED + target.getName() + " has not yet joined this server");
 			return true;
